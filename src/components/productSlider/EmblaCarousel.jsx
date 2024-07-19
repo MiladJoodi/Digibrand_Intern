@@ -26,18 +26,18 @@ const EmblaCarousel = (props) => {
   )
 
   return (
-    <section className="embla flex flex-col items-center sm:flex-row sm:gap-16" dir="rtl">
+    <section className="embla flex flex-col items-center" dir="rtl">
       <div className="embla__viewport grow" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((item,index) => (
-            <div className="embla__slide" key={index}>
-              <Image src={item.img} alt="" width={400} height={350} className="rounded-lg" />
+            <div className="embla__slide relative" key={index}>
+              <Image src={item.img} alt="" width={500} height={250} className="rounded-lg" />
             </div>
           ))}
         </div>
       </div>
 
-      <div className="embla__controls sm:self-end">
+      <div className="embla__controls">
         <div className="embla__dots mr-8">
           {scrollSnaps.map((_, index) => (
             <DotButton

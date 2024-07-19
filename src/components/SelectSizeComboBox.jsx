@@ -32,17 +32,9 @@ const frameworks = [
     value: "nuxt.js",
     label: "کاغذ 4mm",
   },
-  {
-    value: "remix",
-    label: "کاغذ 5mm",
-  },
-  {
-    value: "astro",
-    label: "کاغذ 6mm",
-  },
 ];
 
-export function ComboboxDemo() {
+export function SelectSizeComboBox() {
   const [open, setOpen] = React.useState(false);
   const [value, setValue] = React.useState("");
 
