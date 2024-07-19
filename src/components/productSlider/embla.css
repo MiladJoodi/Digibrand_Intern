@@ -1,12 +1,12 @@
 .embla {
-    max-width: 24rem;
+    max-width: 28rem;
     /* margin: auto; */
     --slide-height: 19rem;
     --slide-spacing: 1rem;
     --slide-size: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 8px;
+    gap: 16px;
   }
   .embla__viewport {
     overflow: hidden;
@@ -43,7 +43,7 @@
   .embla__dots {
     left: 0;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: flex-end;
     align-items: center;
     margin-right: calc((2.6rem - 1.4rem) / 2 * -1);

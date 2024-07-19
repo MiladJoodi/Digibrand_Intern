@@ -2,6 +2,7 @@ import React, { useCallback } from 'react'
 import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import Autoplay from 'embla-carousel-autoplay'
 import useEmblaCarousel from 'embla-carousel-react'
+import Image from 'next/image'
 
 const EmblaCarousel = (props) => {
   const { slides, options } = props
@@ -28,16 +29,16 @@ const EmblaCarousel = (props) => {
     <section className="embla" dir="rtl">
       <div className="embla__viewport grow" ref={emblaRef}>
         <div className="embla__container bg-red-100">
-          {slides.map((index) => (
+          {slides.map((item,index) => (
             <div className="embla__slide" key={index}>
-              <div className="embla__slide__number">{index + 1}</div>
+              <Image src={item.img} alt="" width={480} height={350} />
             </div>
           ))}
         </div>
       </div>
 
       <div className="embla__controls self-end">
-        <div className="embla__dots">
+        <div className="embla__dots ">
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
