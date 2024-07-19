@@ -32,7 +32,7 @@ const InfoSection = () => {
             امکان سفارش چاپ اختصاصی در تعداد کم برای این محصول وجود دارد.
           </p>
           <button className="flex items-center gap-1 font-bold text-green-800 self-end justify-end cursor-pointer">
-            بیشتر
+          مشاهده جزئیات
             <SquareArrowDown size={18} />
           </button>
         </div>
@@ -59,7 +59,7 @@ const InfoSection = () => {
         <button className="flex items-center gap-1 font-bold text-green-800 self-end justify-end cursor-pointer"
         onClick={()=> handleMoreText()}
         >
-            مشاهده جزئیات
+            بیشتر
             <SquareArrowDown size={18} />
           </button>
       </div>
