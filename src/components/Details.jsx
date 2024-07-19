@@ -21,8 +21,8 @@ const Details = () => {
   const [selectedColor, setSelectedColor] = useState(1);
 
   return (
-    <div className="p-4">
-      <p>پاکت کرافت 27cm x 36cm بسته 25 عددی</p>
+    <div className="flex flex-col gap-6 p-4">
+      <p className="text-xl">پاکت کرافت 27cm x 36cm بسته 25 عددی</p>
       {/* Select Color */}
       <div className="flex gap-6">
         {data.map((item) => {
@@ -71,30 +71,32 @@ const Details = () => {
       {/* Accordion */}
 
       {/* Plus and Minus Buttons */}
-      <div className="flex items-center gap-4 justify-between sm:justify-normal">
-        <div className="flex items-center gap-2 text-red-600 text-sm">
+      <div className="mt-8 flex items-center justify-between">
+        <div className="flex gap-2 text-red-600 text-sm">
           <SquareCheckBig size={18} />
           این محصول قابلیت چاپ دارد
         </div>
-        <div className="inline-flex rounded-lg shadow-sm">
-            <Button
-              type="button"
-              class="w-[50px] py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-gray-100 text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-            >
-              +
-            </Button>
-            <Button
-              type="button"
-              class="w-[50px] py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-gray-100 text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-            >
-              4
-            </Button>
-            <Button
-              type="button"
-              class="w-[50px] py-2 px-3 inline-flex justify-center items-center gap-2 -ms-px first:rounded-s-lg first:ms-0 last:rounded-e-lg text-sm font-medium focus:z-10 border border-gray-200 bg-gray-100 text-gray-800 hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800"
-            >
-              -
-            </Button>
+        <div className="flex items-center">
+        <button
+            type="button"
+            className="w-[60px] text-base font-medium rounded-r-md text-black bg-gray-100 hover:bg-gray-100 px-4 py-2"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            className="w-[60px] border-l border-r text-base font-medium text-black bg-gray-100 hover:bg-gray-100 px-4 py-2"
+          >
+            4
+          </button>
+          <button
+            type="button"
+            className="w-[60px] text-base font-medium rounded-l-md text-black bg-gray-100 hover:bg-gray-100 px-4 py-2"
+          >
+            -
+          </button>
+          
+          
         </div>
       </div>
       {/* Plus and Minus Buttons */}

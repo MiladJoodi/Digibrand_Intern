@@ -41,7 +41,7 @@ export function SelectWeightComboBox() {
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label
-            : "ابعاد کاغذ را انتخاب کنید"}
+            : "ابعاد کاغذ"}
           <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
         </Button>
       </PopoverTrigger>
