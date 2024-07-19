@@ -66,4 +66,13 @@
   body {
     @apply bg-background text-foreground;
   }
+  .popupGreen {
+    @apply bg-[#4e7a63];
+  }
+  .bgColor {
+    @apply bg-[#f6f6f6];
+  }
+  .dotsColor {
+    @apply bg-[#949494];
+  }
 }
