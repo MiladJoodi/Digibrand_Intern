@@ -3,6 +3,7 @@ import { toFarsiNumber } from "@/lib/PersianNumber";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import clsx from "clsx";
+import { ComboboxDemo } from "./ComboBox";
 
 const data = [
   { id: 1, color: "bg-red-400" },
@@ -38,15 +39,31 @@ const Details = () => {
       {/* Price */}
       <div className="flex gap-4">
         <p>قیمت هر کیلو:</p>
-        <p>94,300 تومان</p>
+        <p className="flex gap-2">
+          <span className="text-emerald-600">94,300</span>
+          <span>تومان</span>
+        </p>
       </div>
 
       {/* Level */}
-      <div className="flex text-sm">
+      <div className="flex text-xs sm:text-sm gap-2">
         <p>سطح رضایت خریداران:</p>
-        <p>(98%) عالی</p>
-        <p>21 دیدگاه ثبت شده</p>
+        <p className="text-emerald-600">(98%) عالی 😊</p>
+        <p className="text-sky-500">21 دیدگاه ثبت شده</p>
       </div>
+      {/* Level */}
+
+
+      {/* Select Boxes */}
+      <div>
+        <div>
+          <ComboboxDemo />
+        </div>
+        <div></div>
+      </div>
+      {/* Select Boxes */}
+
+
     </div>
   );
 };
