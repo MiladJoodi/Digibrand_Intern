@@ -2,6 +2,7 @@ import { Vazirmatn } from "next/font/google";
 import "./globals.css";
 import Popup from "@/components/Popup";
 import "../components/productSlider/embla.css";
+import localFont from 'next/font/local'
 
 const vazirmatn = Vazirmatn({ subsets: ["latin"] });
 
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl">
-      <body className={`${vazirmatn.className} bgColor`}>
+      <body className={`bgColor`}>
         <div className="container p-4 flex flex-col min-h-screen">
           {/* <header className="mx-2 tablet:mx-4 laptop:mx-8 desktop:mx-10 desktop-2xl:mx-20  mt-2 tablet:mt-3 laptop:mt-5   h-14 tablet:h-16 laptop:h-[4.65rem] border border-transparent rounded-xl bg-[hsl(40_45%_87%)]"></header> */}
           <Popup />

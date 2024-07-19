@@ -1,4 +1,5 @@
 "use client";
+import Details from "./Details";
 import EmblaCarousel from "./productSlider/EmblaCarousel";
 
 const OPTIONS = { dragFree: true, direction: "rtl", loop: true };
@@ -16,12 +17,12 @@ const ProductDetails = () => {
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row">
       {/* Slider */}
-      <div className="flex-1 p-4 flex justify-center px-12">
+      <div className="flex-1 py-4 flex justify-center px-12">
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
 
       <div className="flex-1">
-        details
+        <Details />
       </div>
 
     </div>

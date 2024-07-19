@@ -1,12 +1,12 @@
 .embla {
-    max-width: 28rem;
+    /* max-width: 28rem; */
     /* margin: auto; */
     --slide-height: 19rem;
     --slide-spacing: 1rem;
     --slide-size: 100%;
     display: flex;
-    justify-content: space-between;
-    gap: 16px;
+    /* justify-content: space-between; */
+    /* gap: 16px; */
   }
   .embla__viewport {
     overflow: hidden;

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "IranSans";
+  src: url("/fonts/IRANSansWeb.woff") format("woff"),
+    url("/fonts/IRANSansWeb.woff2") format("woff2");
+}
+* {
+  font-family: "IranSans";
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
