@@ -17,7 +17,7 @@ const ProductDetails = () => {
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row">
       {/* Slider */}
-      <div className="flex-1 py-4 flex justify-center px-12">
+      <div className="flex-1 py-4 flex justify-center px-6">
         <EmblaCarousel slides={SLIDES} options={OPTIONS} />
       </div>
 
