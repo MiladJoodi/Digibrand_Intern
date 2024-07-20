@@ -7,16 +7,16 @@ import { useState } from "react";
 
 const InfoSection = () => {
 
-    const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false)
 
-    const handleMoreText = ()=>{
-        setOpen(!open)
-    }
+  const handleMoreText = () => {
+    setOpen(!open)
+  }
 
   return (
-    <section className="flex flex-col md:flex-row items-center gap-4">
+    <section className="flex flex-col md:flex-row gap-4">
       {/* Sefaresh Chap */}
-      <div className="flex flex-1 gap-4 bg-white rounded-xl p-4">
+      <div className="flex flex-1 gap-4 bg-white rounded-xl p-4 items-stretch	">
         <div className="overflow-hidden flex justify-center items-center">
           <Image
             src="/images/05.jpg"
@@ -27,12 +27,14 @@ const InfoSection = () => {
           />
         </div>
         <div className="flex flex-col gap-2 sm:gap-4 justify-between w-full">
-          <h4 className="text-emerald-500 text-lg font-bold">سفارش چاپ</h4>
-          <p className="text-sm sm:text-base tracking-tighter text-justify">
-            امکان سفارش چاپ اختصاصی در تعداد کم برای این محصول وجود دارد.
-          </p>
-          <button className="flex items-center gap-1 font-bold text-green-800 self-end justify-end cursor-pointer">
-          مشاهده جزئیات
+          <div className="flex flex-col gap-2">
+            <h4 className="text-emerald-500 text-lg font-bold">سفارش چاپ</h4>
+            <p className="text-sm sm:text-base tracking-tighter text-justify">
+              امکان سفارش چاپ اختصاصی در تعداد کم برای این محصول وجود دارد.
+            </p>
+          </div>
+          <button className="flex items-center gap-1 text-sm font-bold text-green-800 self-end justify-end cursor-pointer">
+            مشاهده جزئیات
             <SquareArrowDown size={18} />
           </button>
         </div>
@@ -56,12 +58,12 @@ const InfoSection = () => {
           متمایز کرده است و نظر کسانی که در توزیع محصولات مختلف فعالیت دارند را
           به خود جلب کرده است.
         </p>
-        <button className="flex items-center gap-1 font-bold text-green-800 self-end justify-end cursor-pointer"
-        onClick={()=> handleMoreText()}
+        <button className="flex items-center gap-1 text-sm font-bold text-green-800 self-end justify-end cursor-pointer"
+          onClick={() => handleMoreText()}
         >
-            بیشتر
-            <SquareArrowDown size={18} />
-          </button>
+          بیشتر
+          <SquareArrowDown size={18} />
+        </button>
       </div>
     </section>
   );

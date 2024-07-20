@@ -19,7 +19,6 @@ export default function RootLayout({ children }) {
           {/* <header className="mx-2 tablet:mx-4 laptop:mx-8 desktop:mx-10 desktop-2xl:mx-20  mt-2 tablet:mt-3 laptop:mt-5   h-14 tablet:h-16 laptop:h-[4.65rem] border border-transparent rounded-xl bg-[hsl(40_45%_87%)]"></header> */}
           <Popup />
           <main className="flex-1 ">{children}</main>
-          <footer className="bg-[hsl(148_23%_39%)] basis-[24.5625rem] laptop:basis-[21.5625rem] relative"></footer>
         </div>
       </body>
     </html>

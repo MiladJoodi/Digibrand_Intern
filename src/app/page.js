@@ -1,3 +1,4 @@
+import Comments from "@/components/Comments";
 import InfoSection from "@/components/InfoSection";
 import ProductDetails from "@/components/ProductDetails";
 import Suggest from "@/components/Suggest";
@@ -9,6 +10,7 @@ export default function Home() {
     <ProductDetails />
     <InfoSection />
     <Suggest />
+    <Comments />
    </section>
   );
 }

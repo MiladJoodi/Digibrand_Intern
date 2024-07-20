@@ -14,10 +14,10 @@ const Suggest = () => {
       <p className="text-emerald-500 text-sm sm:text-base font-semibold">
         خریداران این محصول، محصولات زیر را هم خریده اند
       </p>
-      <div className="flex justify-center gap-2 sm:gap-4 ">
+      <div className="flex justify-center gap-1 sm:gap-4 px-2">
         {data.map((item, index) => (
           <div className="flex flex-col items-center justify-center gap-2 " key={index}>
-            <Image src={item.img} alt="" width={40} height={40} className="w-[85px] border border-gray-200 rounded-xl p-2" />
+            <Image src={item.img} alt="" width={35} height={35} className="w-[80px] border border-gray-200 rounded-xl p-1" />
             <span className="p-1 text-sm sm:text-base rounded-lg bg-gray-100 text-emerald-500 px-4">زنبوری</span>
           </div>
         ))}

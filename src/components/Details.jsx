@@ -9,6 +9,7 @@ import { Accordion } from "./ui/accordion";
 import ProductAccordion from "./ProductAccordion";
 import { SquareCheckBig } from "lucide-react";
 import ProductCount from "./ProductCount";
+import AddToCart from "./AddToCart";
 
 const data = [
   { id: 1, color: "bg-red-400" },
@@ -73,7 +74,10 @@ const Details = () => {
       {/* Accordion */}
 
       {/* Plus and Minus Buttons */}
+      <div className="flex flex-col">
       <ProductCount />
+      <AddToCart />
+      </div>
       
     </div>
   );
