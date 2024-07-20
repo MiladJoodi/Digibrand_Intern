@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const data = [
-  { img: "/images/06.jpg" },
+  { img: "/images/10.jpg" },
   { img: "/images/07.jpg" },
   { img: "/images/08.jpg" },
   { img: "/images/09.jpg" },
@@ -10,15 +10,15 @@ const data = [
 
 const Suggest = () => {
   return (
-    <div className="bg-white rounded-xl p-4">
-      <p className="text-emerald-500 text-sm sm:text-base">
+    <div className="flex flex-col bg-white rounded-xl p-4 gap-4">
+      <p className="text-emerald-500 text-sm sm:text-base font-semibold">
         خریداران این محصول، محصولات زیر را هم خریده اند
       </p>
-      <div className="grid grid-cols-5 gap-2">
+      <div className="flex justify-center gap-2 sm:gap-4 ">
         {data.map((item, index) => (
-          <div className="flex flex-col items-center justify-center gap-2 border border-gray-300 rounded-lg" key={index}>
-            <Image src={item.img} alt="" width={60} height={60} />
-            <span className="p-1 rounded-lg bg-slate-200 text-emerald-500">کاغذ زنبوری</span>
+          <div className="flex flex-col items-center justify-center gap-2 " key={index}>
+            <Image src={item.img} alt="" width={40} height={40} className="w-[85px] border border-gray-200 rounded-xl p-2" />
+            <span className="p-1 text-sm sm:text-base rounded-lg bg-gray-100 text-emerald-500 px-4">زنبوری</span>
           </div>
         ))}
       </div>
