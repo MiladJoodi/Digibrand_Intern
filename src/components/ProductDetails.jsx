@@ -2,7 +2,7 @@
 import Details from "./Details";
 import EmblaCarousel from "./productSlider/EmblaCarousel";
 
-const OPTIONS = { dragFree: true, direction: "rtl", loop: true };
+const OPTIONS = { dragFree: false, direction: "rtl", loop: true };
 const SLIDE_COUNT = 4;
 // const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
 

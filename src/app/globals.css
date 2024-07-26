@@ -84,3 +84,17 @@
     @apply bg-[#949494];
   }
 }
+
+/* hide slick arrow Next and Prev Button */
+.slick-arrow{
+  display: none !important;
+}
+
+.slick-slide{
+  margin: 0 0px;
+}
+
+.slick-track{
+  display: flex !important;
+  gap: 5px !important;
+}
