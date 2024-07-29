@@ -58,10 +58,10 @@ const SuggestSlider = () => {
                 </p>
                 <Slider {...settings}>
                     {data.map((item, index) => (
-                        <div className="!flex flex-col items-center justify-center gap-2 text-center" key={index}>
+                        <button className="!flex flex-col items-center justify-center gap-2 text-center" key={index}>
                             <Image src={item.img} alt="" width={120} height={120} className="w-[120px] border border-gray-200 rounded-xl p-1" />
                             <span className="text-sm sm:text-base rounded-lg bg-gray-100 text-emerald-500 py-1 px-2 sm:px-4">زنبوری</span>
-                        </div>
+                        </button>
                     ))}
                 </Slider>
             </div>

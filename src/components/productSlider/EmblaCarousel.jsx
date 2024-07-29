@@ -30,7 +30,7 @@ const EmblaCarousel = (props) => {
       <div className="embla__viewport grow" ref={emblaRef}>
         <div className="embla__container">
           {slides.map((item,index) => (
-            <div className="embla__slide relative" key={index}>
+            <div className="embla__slide p-4 relative flex justify-center items-center" key={index}>
               <Image src={item.img} alt="" width={500} height={250} className="rounded-lg" />
             </div>
           ))}
