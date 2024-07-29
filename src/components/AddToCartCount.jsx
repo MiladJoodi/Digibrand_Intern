@@ -7,7 +7,7 @@ const AddToCartCount = () => {
 
   const { productCount, setProductCount } = useAppContext();
 
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   const plusHandler = () => {
     if (productCount >= 5) {

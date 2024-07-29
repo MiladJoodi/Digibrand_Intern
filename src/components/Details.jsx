@@ -77,7 +77,7 @@ const Details = ({ productInfo }) => {
       {/* Plus and Minus Buttons */}
       <div className="flex flex-col">
         <ProductCount />
-        <AddToCart />
+        <AddToCart price={price} />
       </div>
 
     </div>

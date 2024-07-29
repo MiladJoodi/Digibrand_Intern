@@ -2,9 +2,9 @@
 import { useAppContext } from "@/context";
 import { Button } from "./ui/button";
 import AddToCartCount from "./AddToCartCount";
+import formatCurrency from "@/lib/formatCurrency"; 
 
-
-const AddToCart = () => {
+const AddToCart = ({price}) => {
 
     const { productCount, setProductCount } = useAppContext();
 
@@ -30,7 +30,7 @@ const AddToCart = () => {
                     </div>
 
                     <div className="flex items-center justify-center gap-1">
-                        <span>27,606,000</span>
+                        <span>{formatCurrency(price * productCount)}</span>
                         <span className="text-xs tracking-tighter">تومان</span>
                     </div>
 

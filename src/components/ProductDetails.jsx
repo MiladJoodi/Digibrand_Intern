@@ -2,7 +2,7 @@ import Details from "./Details";
 import ProductDetailsSlider from "./ProductDetailsSlider";
 
 async function getData() {
-  const res = await fetch("https://mocki.io/v1/4bc690c1-2f45-4062-988c-15935325d1b6")
+  const res = await fetch("https://mocki.io/v1/9b77ffac-4894-4484-80fb-122d54268158")
   return res.json();
 }
 
