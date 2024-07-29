@@ -9,22 +9,22 @@ const ProductCount = () => {
 
   const { productCount, setProductCount } = useAppContext();
 
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
-  const plusHandler = () => {
-    if (productCount >= 5) {
-      alert("حداکثر تعداد سفارش 5 بسته می باشد")
-      return
-    }
-    setProductCount((prev) => prev + 1)
-  }
-  const minusHandler = () => {
-    if (productCount <= 0) {
-      alert("حداقل تعداد سفارش 1 بسته می باشد")
-      return
-    }
-    setProductCount((prev) => prev - 1)
-  }
+  // const plusHandler = () => {
+  //   if (productCount >= 5) {
+  //     alert("حداکثر تعداد سفارش 5 بسته می باشد")
+  //     return
+  //   }
+  //   setProductCount((prev) => prev + 1)
+  // }
+  // const minusHandler = () => {
+  //   if (productCount <= 0) {
+  //     alert("حداقل تعداد سفارش 1 بسته می باشد")
+  //     return
+  //   }
+  //   setProductCount((prev) => prev - 1)
+  // }
 
   return (
     <div className="mt-4 flex items-center justify-between text-red-600">

@@ -2,16 +2,17 @@ import { Heart, ReplyAll } from "lucide-react";
 import { BsFillCalendarDateFill } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
-const CommentItem = () => {
+const CommentItem = ({ comment }) => {
+
     return (
         <div className="flex flex-col bg-gray-100 rounded-lg p-4  gap-4">
             {/* top */}
             <div className="flex justify-between">
                 <div className="flex gap-2 sm:gap-4 items-center">
-                    <p className="font-semibold text-md text-gray-600">رضا قریشی</p>
+                    <p className="font-semibold text-md text-gray-600">{comment.name}</p>
                     <p className="text-xs text-white bg-green-800 px-2 py-[3px] rounded flex justify-center items-center">خریدار</p>
                     <div className="flex gap-2 text-gray-600 text-sm">
-                        1403/04/01
+                        {comment.date}
                         <BsFillCalendarDateFill className="text-gray-600" />
                     </div>
                 </div>
@@ -24,7 +25,7 @@ const CommentItem = () => {
 
             {/* content */}
             <p className="text-gray-600">
-                سلام وقت شما بخیر ببخشید من یک کیلو کاغذ سفارش دادم متاسفانه روی جعبه یک کیلو نوشته ولی بسته تحویل گرفتم البته باز هم نکردم با بسته بندی 580 گرم هست...
+            {comment.body}
             </p>
 
             {/* buttons  */}

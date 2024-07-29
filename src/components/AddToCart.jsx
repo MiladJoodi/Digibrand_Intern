@@ -7,7 +7,6 @@ import AddToCartCount from "./AddToCartCount";
 const AddToCart = () => {
 
     const { productCount, setProductCount } = useAppContext();
-    console.log(productCount)
 
     return (
         <div>

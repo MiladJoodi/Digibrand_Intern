@@ -1,28 +1,21 @@
-"use client";
 import Details from "./Details";
-import EmblaCarousel from "./productSlider/EmblaCarousel";
+import ProductDetailsSlider from "./ProductDetailsSlider";
 
-const OPTIONS = { dragFree: false, direction: "rtl", loop: true };
-const SLIDE_COUNT = 4;
-// const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
+async function getData() {
+  const res = await fetch("https://mocki.io/v1/4bc690c1-2f45-4062-988c-15935325d1b6")
+  return res.json();
+}
 
-const SLIDES = [
-  {img: "/images/01.jpg"},
-  {img: "/images/02.jpg"},
-  {img: "/images/03.jpg"},
-  {img: "/images/04.jpg"},
-]
+const ProductDetails = async  () => {
+  const data = await getData();
 
-const ProductDetails = () => {
   return (
     <div className="bg-white rounded-xl flex flex-col md:flex-row">
       {/* Slider */}
-      <div className="flex-1 py-4 flex justify-center px-6">
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} />
-      </div>
+      <ProductDetailsSlider />
 
       <div className="flex-1">
-        <Details />
+        <Details productInfo={data} />
       </div>
 
     </div>

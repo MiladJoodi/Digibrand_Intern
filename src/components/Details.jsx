@@ -19,24 +19,25 @@ const data = [
   { id: 5, color: "bg-stone-200" },
 ];
 
-const Details = () => {
+
+const Details = ({ productInfo }) => {
   const [selectedColor, setSelectedColor] = useState(1);
+  const { title, price, consent, colors } = productInfo[0];
 
   return (
     <div className="flex flex-col gap-4 sm:gap-6 px-4 py-8">
       {/* Title */}
-      <p className="text-lg sm:text-xl">پاکت کرافت 27cm x 36cm بسته 25 عددی</p>
+      <p className="text-lg sm:text-xl">{title}</p>
       {/* Select Color */}
       <div className="flex gap-6">
         {data.map((item) => {
           return (
             <button
               onClick={() => setSelectedColor(item.id)}
-              className={`w-5 h-5 rounded-full ${item.color} ${
-                selectedColor == item.id
+              className={`w-5 h-5 rounded-full ${item.color} ${selectedColor == item.id
                   ? `ring-1 ring-opacity-50 ring-offset-2 ring-slate-400`
                   : ""
-              }`}
+                }`}
               key={item.id}
             ></button>
           );
@@ -47,7 +48,7 @@ const Details = () => {
       <div className="flex gap-4">
         <p>قیمت هر کیلو:</p>
         <p className="flex gap-2">
-          <span className="text-emerald-600">94,300</span>
+          <span className="text-emerald-600">{price}</span>
           <span>تومان</span>
         </p>
       </div>
@@ -55,7 +56,7 @@ const Details = () => {
       {/* Level */}
       <div className="flex text-xs sm:text-sm gap-2">
         <p>سطح رضایت خریداران:</p>
-        <p className="text-emerald-600">(98%) عالی 😊</p>
+        <p className="text-emerald-600">({consent}) عالی 😊</p>
         <p className="text-sky-500">21 دیدگاه ثبت شده</p>
       </div>
       {/* Level */}
@@ -75,10 +76,10 @@ const Details = () => {
 
       {/* Plus and Minus Buttons */}
       <div className="flex flex-col">
-      <ProductCount />
-      <AddToCart />
+        <ProductCount />
+        <AddToCart />
       </div>
-      
+
     </div>
   );
 };
