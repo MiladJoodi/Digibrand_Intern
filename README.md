@@ -1,6 +1,6 @@
 # Digibrand Intern Project
 
-<h4>In this project, I utilized Next.js, Tailwind CSS, Shadcn UI, Embla Carousel, App Router 🚀</h4>  
+<h4>In this project, I utilized Next.js, Tailwind CSS, Shadcn UI, Embla Carousel, App Router. 🚀</h4>  
 
 [Demo](https://digibrand-intern.vercel.app/).\
 Thank you sincerely. 🙏
