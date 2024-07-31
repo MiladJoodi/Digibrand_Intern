@@ -5,6 +5,8 @@
 [Demo](https://digibrand-intern.vercel.app/).\
 Thank you sincerely. 🙏
 
+Co-authored-by: Joodi <winbeta.com@gmail.com>
+
   
 <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
     <img
